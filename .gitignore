@@ -1,0 +1,37 @@
+# Course data
+features_stress_fixed_K-EmoPhone.pkl
+
+# Colab and notebook artifacts
+Output/
+.ipynb_checkpoints/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated model and experiment artifacts
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.pkl
+*.pickle
+results_*.json
+*_results.json
+hpo_trials_*.pkl
+*.log
+
+# Local environment files
+.DS_Store
+.env
+.env.*
