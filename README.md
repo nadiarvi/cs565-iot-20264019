@@ -1,5 +1,8 @@
 # CS565 IoT Data Science Mini Project
 
+Name: Nadia Azzahra Putri Arvi  
+Student ID: 20264019
+
 This repository contains the final submission notebook:
 
 - `20264019.ipynb`
