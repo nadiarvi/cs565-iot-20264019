@@ -23,34 +23,41 @@ This data file is not committed to the repository.
 
 ## Dataset Placement
 
-Recommended Google Drive folder:
+Choose a Google Drive folder to use as the project root. In Section 0 of the
+notebook, set `ROOT_DIR` to that folder.
+
+For example, if your chosen folder is:
 
 ```text
-MyDrive/KAIST (Graduate)/CS565 IoT Data Science/Mini Project/Models and Codes/
+MyDrive/path/to/your/project-folder/
 ```
 
-Place the data file directly inside that folder:
+then place the data file directly inside it:
 
 ```text
-MyDrive/KAIST (Graduate)/CS565 IoT Data Science/Mini Project/Models and Codes/features_stress_fixed_K-EmoPhone.pkl
+MyDrive/path/to/your/project-folder/features_stress_fixed_K-EmoPhone.pkl
 ```
 
-With the default notebook configuration, Section 0 sets:
+and set Section 0 to:
 
 ```python
-ROOT_DIR = Path("/content/drive/MyDrive/KAIST (Graduate)/CS565 IoT Data Science/Mini Project/Models and Codes")
+ROOT_DIR = Path("/content/drive/MyDrive/path/to/your/project-folder")
 DATA_PATH = str(ROOT_DIR / "features_stress_fixed_K-EmoPhone.pkl")
 OUTPUT_DIR = ROOT_DIR / "Output"
 ```
 
-If you place the dataset somewhere else, update `ROOT_DIR` and/or `DATA_PATH` in Section 0 before running the loading cells. The same Section 0 path adjustment applies if you run the notebook with another compatible preprocessed data file.
+If your data file has a different name or is stored outside `ROOT_DIR`, update
+`DATA_PATH` directly before running the loading cells. The same Section 0 path
+adjustment applies if you run the notebook with another compatible preprocessed
+data file.
 
 ## Generated Outputs
 
-The notebook writes generated artifacts under:
+The notebook writes generated artifacts under `OUTPUT_DIR`, which is derived
+from your chosen `ROOT_DIR`:
 
 ```text
-MyDrive/KAIST (Graduate)/CS565 IoT Data Science/Mini Project/Models and Codes/Output/
+<your ROOT_DIR>/Output/
 ```
 
 Section 0 creates and controls the main output directories:
